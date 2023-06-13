@@ -1,0 +1,368 @@
+body {
+    font-family: 'SF Pro Display';
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #ffffff;
+}
+
+#navbar {
+    transition: all 0.5s;
+    opacity: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 5px;
+    background-color: #000;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+  
+#navbar.scrolled {
+    opacity: 1;
+    background-color: #000;
+}
+  
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .navbar-logo img {
+    width: 110px;
+    height: 110px;
+}
+
+header .navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 2px;
+    margin-right: 50px;
+}
+  
+header .items {
+    text-align: center;
+    margin-inline: 3%;
+}
+  
+a#items {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: color 0.3s;
+    margin-right: 10px;
+}
+
+a#items:hover {
+    color: #103ee0;
+}
+  
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 10%);
+}
+  
+header .container {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+  
+header .navbar-logo img {
+    width: 110px;
+    height: 110px;
+    margin-top: -6px;
+    margin-left: -8px;
+}
+  
+header .navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 2px;
+    margin-left: 600px;
+}
+  
+header .items {
+    text-align: center;
+    margin-inline: 3%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    height: 900px;
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('fire-bg.png'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.app-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.app-img {
+    width: 15%;
+}
+
+.download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: #292929;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    transition: background-color 0.3s;
+}
+
+.download-btn img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+.download-btn:hover {
+    background-color: #444;
+}
+
+.downloads-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2B2B2B;
+    color: #ffffff;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.downloads-demo-content {
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.downloads-demo::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-image: url("wave-top.svg");
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.downloads-demo::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-image: url("wave-bottom.svg");
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.downloads-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.download-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.download-card {
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+    color: #000;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-img:hover {
+    transform: scale(1.05);
+}
+
+.fire-img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fire-img:hover {
+    transform: scale(1.05);
+}
+
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-card h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.video-container {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.demo-video {
+    max-width: fit-content;
+    height: 800px;
+}
+
+.our-team {
+    padding: 4rem 0;
+    background-color: #ffffff;
+    color: #1A1A1A;
+    height: fit-content;
+}
+
+.our-team h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.person {
+    width: 22%;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.card h3, .card p {
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .downloads-content {
+        flex-direction: column;
+    }
+
+    .download-card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .team {
+        justify-content: center;
+    }
+
+    .person {
+        width: 45%;
+    }
+
+    .app-images {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .app-img {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+}
+
+.about-us {
+    padding: 40px;
+    background-color: #1a1a1a;
+    height: 760px;
+    align-items: center;
+}
+  
+  #aus.section-title.text-center {
+    color: #ffffff;
+    font-weight: bold;
+}
+  
+  .img-abs {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .img-abs img {
+    width: 20%;
+    height: 20%;
+}
+  
+  .isi-txt p {
+    margin-top: 25px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+}
